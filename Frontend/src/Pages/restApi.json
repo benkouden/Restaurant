@@ -1,0 +1,174 @@
+{
+  "data": [
+    {
+      "ourQualities": [
+        {
+          "id": 1,
+          "image": "./quality_food.svg",
+          "title": "NOURRITURE DE QUALITÉ",
+          "description": "Nous offrons une nourriture de qualité, préparée avec des ingrédients frais et savoureux."
+        },
+        {
+          "id": 2,
+          "image": "./super_taste.svg",
+          "title": "GOÛT EXCEPTIONNEL",
+          "description": "Un goût incomparable qui éveille vos sens à chaque bouchée."
+        },
+        {
+          "id": 3,
+          "image": "./fast_delivery.svg",
+          "title": "LIVRAISON RAPIDE",
+          "description": "Une livraison rapide pour savourer vos plats sans attendre."
+        }
+      ],
+      "dishes": [
+        {
+          "id": 1,
+          "image": "./dinner1.jpeg",
+          "title": "RÔTI DE GIGOT D'AGNEAU",
+          "category": "Dîner"
+        },
+        {
+          "id": 2,
+          "image": "./dinner2.png",
+          "title": "SAUMON MARINÉ AUX AGRUMES",
+          "category": "Dîner"
+        },
+        {
+          "id": 3,
+          "image": "./breakfast1.png",
+          "title": "BAR POÊLÉ",
+          "category": "Petit-déjeuner"
+        },
+        {
+          "id": 4,
+          "image": "./dinner3.png",
+          "title": "FRAISE FARCIE",
+          "category": "Dîner"
+        },
+        {
+          "id": 5,
+          "image": "./lunch1.png",
+          "title": "MENU BURGER AU BOEUF",
+          "category": "Déjeuner"
+        },
+        {
+          "id": 6,
+          "image": "./dinner4.png",
+          "title": "SOUPE DE MOULES",
+          "category": "Dîner"
+        },
+        {
+          "id": 7,
+          "image": "./dinner5.png",
+          "title": "SPAGHETTIS ITALIENS",
+          "category": "Dîner"
+        },
+        {
+          "id": 8,
+          "image": "./dinner6.png",
+          "title": "POISSON GRILLÉ",
+          "category": "Dîner"
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "image": "./team_member_1.png",
+          "name": "JOHNATHAN TYLER",
+          "designation": "Fondateur & Chef Principal"
+        },
+        {
+          "id": 2,
+          "image": "./team_member_2.png",
+          "name": "WADE WARREN",
+          "designation": "Sous-chef"
+        },
+        {
+          "id": 3,
+          "image": "./team_member_3.png",
+          "name": "JHON DOE",
+          "designation": "Chef Fast-food"
+        },
+        {
+          "id": 4,
+          "image": "./team_member_4.png",
+          "name": "ALEX COAL",
+          "designation": "Chef Senior"
+        }
+      ],
+      "testimonials": [
+        {
+          "id": 1,
+          "image": "./review1.png",
+          "description": "Morbi nulla nec dui lacus, in. Libero in pretium metus massa. Sodales dignissim vitae mauris varius faucibus. Eleifend dui, non laoreet ac luctus facilisis diam. Enim scelerisque vel at id viverra tellus.",
+          "rating": 4,
+          "userName": "Jane Cooper"
+        },
+        {
+          "id": 2,
+          "image": "./review2.png",
+          "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+          "rating": 4.5,
+          "userName": "Esther Howard"
+        },
+        {
+          "id": 3,
+          "image": "./review3.png",
+          "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+          "rating": 5,
+          "userName": "Guy Hawkins"
+        }
+      ],
+      "who_we_are": [
+        {
+          "id": 1,
+          "number": "14",
+          "title": "Restaurants"
+        },
+        {
+          "id": 2,
+          "number": "20",
+          "title": "Chefs en cuisine"
+        },
+        {
+          "id": 3,
+          "number": "08",
+          "title": "Années d'expérience"
+        },
+        {
+          "id": 4,
+          "number": "200",
+          "title": "Plats cuisinés"
+        }
+      ],
+      "navbarLinks": [
+        {
+          "id": 1,
+          "title": "ACCUEIL",
+          "link": "/"
+        },
+        {
+          "id": 2,
+          "title": "À PROPOS",
+          "link": "/about"
+        },
+        {
+          "id": 3,
+          "title": "SERVICES",
+          "link": "/services"
+        },
+        {
+          "id": 4,
+          "title": "ÉQUIPE",
+          "link": "team"
+        },
+        {
+          "id": 5,
+          "title": "RÉSERVATION",
+          "link": "reservation"
+        }
+      ]
+    }
+  ]
+}
