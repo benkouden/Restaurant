@@ -1,4 +1,3 @@
-// Importations
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -9,28 +8,21 @@ import connectDB from "./config/connectDB.js";
 import { errorMiddleware } from "./error/error.js";
 import reservationRouter from "./routes/reservationRoute.js";
 
-// Chargement .env
 dotenv.config();
 
-// App
 const app = express();
-
-// Configuration CORS
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    origin: process.env.FRONTEND_URL,
   })
 );
 
-// Gérer les requêtes OPTIONS (préflight)
-app.options("*", cors());
-
-// Middleware
+// Middleware pour traiter les données JSON et URL encodées
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+
 app.use(cookieParser());
 app.use(morgan("dev"));
 app.use(
@@ -39,20 +31,26 @@ app.use(
   })
 );
 
-// Routes
+
+// Définition de la route pour les réservations
 app.use("/api/reservation", reservationRouter);
 
-// Middleware erreur
+
+
+
+
+// Appel du middleware d'erreur
 app.use(errorMiddleware);
 
-// Route test
-app.get("/", (req, res) => {
-  res.json({ message: "Serveur is running" });
-});
+const PORT = 8081 || process.env.PORT;
 
-// Connexion DB + lancement
+app.get("/", (req, res) => {
+  //Server to Client
+  res.json({
+    message: "Serveur is running",
+  });
+});
 connectDB();
-const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
   console.log("Serveur is running", PORT);
 });
